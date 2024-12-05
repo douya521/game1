@@ -1,0 +1,63 @@
+.game-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.rage-bars {
+    margin-bottom: 20px;
+}
+
+.rage-bar {
+    margin: 10px 0;
+}
+
+.bar {
+    width: 100%;
+    height: 20px;
+    background-color: #eee;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.rage-fill {
+    width: 0%;
+    height: 100%;
+    background-color: #ff4444;
+    transition: width 0.3s ease;
+}
+
+.dialog-box {
+    min-height: 200px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 20px 0;
+    overflow-y: auto;
+}
+
+.attack-options {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+button {
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+}
+
+.game-over {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 20px;
+    border: 2px solid #333;
+    text-align: center;
+} 

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>对骂模拟器</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="game-container">
+        <div class="rage-bars">
+            <div class="rage-bar">
+                <label>玩家怒气值：</label>
+                <div class="bar">
+                    <div id="playerRage" class="rage-fill"></div>
+                </div>
+                <span id="playerRageText">0</span>
+            </div>
+            <div class="rage-bar">
+                <label>对手怒气值：</label>
+                <div class="bar">
+                    <div id="enemyRage" class="rage-fill"></div>
+                </div>
+                <span id="enemyRageText">0</span>
+            </div>
+        </div>
+
+        <div class="dialog-box">
+            <div id="conversation"></div>
+        </div>
+
+        <div class="attack-options">
+            <button onclick="attack(5)">普通攻击 (怒气+5)</button>
+            <button onclick="attack(7)">冷嘲热讽 (怒气+7)</button>
+            <button onclick="attack(10)">恶意挑衅 (怒气+10)</button>
+        </div>
+
+        <div id="gameOver" class="game-over hidden">
+            <h2 id="gameResult"></h2>
+            <button onclick="resetGame()">重新开始</button>
+        </div>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html> 
